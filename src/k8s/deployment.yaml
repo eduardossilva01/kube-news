@@ -60,7 +60,7 @@ spec:
           - name: DB_USERNAME
             value: "kubenews"
           - name: DB_PASSWORD
-            value: "pg@123"
+            value: "PG#123"
           - name: DB_HOST
             value: "postgres"
 ---                
