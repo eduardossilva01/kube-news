@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: edusantos01/kube-news:v1
+          image: edusantos01/conversao-temperatura:v1
           ports:
           - containerPort: 8080
           env:
@@ -74,5 +74,4 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-      nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
