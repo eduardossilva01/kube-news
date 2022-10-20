@@ -21,6 +21,16 @@ pipeline{
                     }
             }
         }
+        
+        stage ('Deploy Kubernetes') {
+            steps {
+                withKubeconfig ([credentialsID:'kubeconfig']) {
+                    sh 'kubectl apply -f .//deployment
+
+
+                }
+            }
+        }
      }
 } 
    
